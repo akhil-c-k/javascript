@@ -1,0 +1,7 @@
+var test = "sample";
+var testSplit = test.split("");
+console.log(testSplit);
+var reJoin = testSplit.reverse();
+console.log(reJoin);
+var finalValue = reJoin.join("");
+console.log(finalValue);
