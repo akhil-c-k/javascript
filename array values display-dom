@@ -1,0 +1,23 @@
+function makeList()
+ {
+ let arrValues = [
+ 'messi',
+ 'cr7',
+ 'hazard',
+ 'modrich'
+ ]
+ 
+ var listContainer = document.createElement('div');
+ document.getElementsByTagName('body')[0].appendChild(listContainer);
+ var listElement = document.createElement('ul');
+ listContainer.appendChild(listElement);
+ var numberOfListItems = arrValues.length;
+ for(i=0;i<numberOfListItems;i++)
+   {
+   var listItem = document.createElement('li');
+   listItem.innerHTML = arrValues[i];
+   listElement.appendChild(listItem)
+   }
+ 
+ }
+ makeList();
